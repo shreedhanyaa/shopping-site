@@ -55,7 +55,7 @@ def registerPage(request):
                 customer.user=user 
                 customer.save()
                 return redirect('login')
-            context={
+        context={
                 'form':form,
                 'customerform':customerform,
             }
