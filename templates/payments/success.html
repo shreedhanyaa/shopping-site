@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {%load static%}
+    {% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> {% endcomment %}
+    {% comment %} <link rel="stylesheet" href="{%static 'css/style.css'%}"> {% endcomment %}
+</head>
+<body>
+<div class="main44"  >
+    <div>
+<center>
+    <img class="gif" style="width: 250px; height:200px; margin-left:100px"src="{% static "images/success gif.gif"%}" alt="">
+
+</center>        </div>
+</div> 
+
+    <div>
+       
+    <h1 class="pay" style="justify-content:center;margin-left:120px;display:flex;">Payment Successful</h1>
+    <p class="success" style="justify-content:center;margin-left:120px;display:flex;">Your payment has been successfully processed.</p>
+   <a class="page" style="margin-left:940px" href="{% url "home" %}"> <button>Home Page</button></a>
+    
+</div>
+
+</body>
+</html>

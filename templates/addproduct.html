@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+ 
+<div class="jumb container row">
+    <div class="col-md-4">
+        <div class="card card-body">
+           <form action="" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+                {{form.as_p}}
+                <br> 
+             <input type="submit" name="submit">
+             </form>
+             {%for i in img%}
+             <h1>{{i.name}}</h1>
+             <img src="{{i.image.url}}" width="40px" height="50px" alt="">
+            </div>
+        </div>
+    </div>
+ 
+</div>
+{%endfor%}
+{% endblock %}
